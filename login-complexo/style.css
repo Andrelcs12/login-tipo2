@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg, #4070f4, rgb(226, 228, 232))
+}
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+.left{
+    
+    padding: 40px;
+    height: 500px;
+    background:linear-gradient(160deg, #f1f1f1, rgb(102, 94, 94));
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+.titulo{
+    
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login input{
+    margin-top: 2px;
+    color: rgb(0, 0, 0);
+    height: 24px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.login label{
+    margin-top: 20px;
+}
+.button p{
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+.button a {
+    margin-left: 5px;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+
+.login-btn{
+
+    margin-top: 20px;
+    border: none;
+    width: 170px;
+    height: 40px;
+    margin-left: 28%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #4070f4;
+    
+}
+
+.login-btn:hover{
+    transform: scale(1.2);
+}
+
+.button p{
+    position: fixed;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.button a {
+    margin-left: 5px;
+}
+
+
+
+
+
+.right img{
+    max-width: 100%;
+    border-radius: 0px 15px 15px 0px;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+@media (max-width: 750px) {
+    .remember{
+        display: flex;
+        flex-direction: column;
+    }
+    .login-btn{
+        text-align: center;
+    }
+}
+@media (max-width: 1040px) {
+    .remember{
+        display: flex;
+        flex-direction: column;
+    }
+    .button p{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 3rem;
+        padding: 0px;
+    }
+    .left{
+        height: 530px;
+    }
+    
+}
+
+@media (max-width: 850px, min-width: 733) {
+    .right{
+        display: none;
+    }
+    .left{
+        border-radius: 40px;
+    }
+    
+
+}
