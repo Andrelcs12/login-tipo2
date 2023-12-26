@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
     <div class="container">
         
-            <div class="left">
+            <div class="left" id="left">
                 <div class="titulo">
                     <h2>Seja bem-vindo(a)</h2>
                     <p>Realize o login ou se cadastre para acessar nosso conteúdo.</p>
                 </div>
                 <div class="login">
-                    <label for="name">Nome do usuário</label>
-                    <input type="text" id="name"class="name" placeholder="José Souza" aria-required="true">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="JoseSouza10@gmail.com" aria-required="true">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" aria-required="true">
 
-                    <label for="senha">Senha</label>
+                    <label for="senha">Senha:</label>
                     <input type="password" id="senha" aria-required="true">
 
                         
@@ -38,20 +37,65 @@
                 <div class="button">
                 <button class="login-btn">login</button>
 
-                <p>Não tem conta ainda?<a href="cadastro">Cadastrar-se</a></p>
+                <div class="link-cdt"><p>Não tem conta ainda?<button class="btn-cdt" onclick="cadastro()">Cadastrar-se</button></p></div>
                 </div>
                 
             </div>
+
+
+<!-- página de cadastro-->
+
+            <div class="cadastro-page" id="page-cdt">
+
+                <div class="titulo-cdt">
+                    <h2>CADASTRO</h2>
+                    <button onclick = "back_login()" id="close_img" class="close-img"><img class="close-img" id="close_img" src="/img/close.png" alt=""></button>
+                </div>
+
+                <div class="cadastro-inputs">
+
+                    <label for="name" class="name-cdt">Nome:</label>
+                    <input type="text" id="name" aria-required="true">
+
+                    <label for="email" class="email-cdt">Email:</label>
+                    <input type="email" id="email" aria-required="true">
+
+                    <label for="senha" class="senha-cdt">Senha:</label>
+                    <input type="password" id="senha" aria-required="true">
+
+                        
+</div>
+                <div class="remember-cdt">
+                    <div class="check">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Lembrar-me</label>
+                </div>
+                <a href="forgot" class="forgot-cdt">Esqueceu a senha?</a>
+                </div>
+
+
+                <div class="button">
+                <button class="botao-cadastro">Cadastrar</button>
+                </div>
+                
+            </div>
+            
+
+
+
+
             <div class="right">
                 <img src="img/img-landing.jpg" alt="imagem de boas vindas"
                 height="500px"  >
             </div>
 
             
-                
+ 
+
+
             </div>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

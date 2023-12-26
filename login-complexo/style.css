@@ -61,18 +61,17 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 
 
 .login-btn{
 
-    margin-top: 20px;
+    margin-top: 30px;
     border: none;
     width: 170px;
     height: 40px;
-    margin-left: 28%;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
@@ -86,7 +85,6 @@ body{
 }
 
 .button p{
-    position: fixed;
     margin-top: 20px;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -94,8 +92,32 @@ body{
 .button a {
     margin-left: 5px;
 }
+.button{
+    text-align: center;
+}
 
+.link-cdt{
+    margin-top: 30px;
+}
 
+.btn-cdt{
+    
+        color: blue;
+        text-decoration: underline;
+        background: transparent;
+        border: none;
+        font-size: 15px;
+        margin-left: 4px;
+}
+
+#email{
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+}
+#senha{
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+}
 
 
 
@@ -108,39 +130,153 @@ body{
 
 
 @media (max-width: 750px) {
-    .remember{
-        display: flex;
-        flex-direction: column;
-    }
     .login-btn{
         text-align: center;
     }
 }
 @media (max-width: 1040px) {
-    .remember{
+    .link-cdt{
         display: flex;
-        flex-direction: column;
-    }
-    .button p{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-left: 3rem;
-        padding: 0px;
-    }
-    .left{
-        height: 530px;
+        flex-direction: row;
     }
     
 }
 
-@media (max-width: 850px, min-width: 733) {
+@media (max-width: 1050px) {
     .right{
         display: none;
+    }
+    .titulo p {
+        margin-top: 20px;
     }
     .left{
         border-radius: 40px;
     }
     
 
+}
+@media (max-width: 620px) {
+    .link-cdt{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo p {
+        margin-top: 20px;
+    }
+    .remember{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.1rem;
+    }
+    .left{
+        height: fit-content;
+    }
+}
+
+@media (max-width: 540px) {
+    .link-cdt a{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo p {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+.cadastro-page{
+    
+    padding: 40px;
+    height: 500px;
+    background:linear-gradient(160deg, #f1f1f1, rgb(102, 94, 94));
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 500px;
+}
+.titulo-cdt{
+    margin-left: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#name{
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+}
+.cadastro-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-cdt{
+    margin-top: 20px;
+}
+.email-cdt{
+    margin-top: 20px;
+}
+.senha-cdt{
+    margin-top: 20px;
+}
+
+.remember-cdt{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao-cadastro{
+    border: none;
+    width: 170px;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #4070f4;
+    border-radius: 10px;
+}
+.botao-cadastro:hover{
+    transform: scale(1.2);
+}
+
+.close-img{
+    background: transparent;
+    border: none;
+}
+.close-img:hover{
+    scale: 1.1;
+}
+
+.cadastro-page{
+    display: none;
+    transition: 0.8s;
+    
+}
+.login-btn{
+    transition: 0.8s;
+}
+
+@media (max-width: 1250px) {
+    .titulo-cdt{
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .close-img{
+        margin-left: 6rem;
+    }
+}
+@media (max-width: 1050px) {
+    .cadastro-page {
+        border-radius: 20px;
+    }
 }
