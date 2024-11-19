@@ -1,3 +1,0 @@
-function cadastro() {
-    alert("hbibibu");
-}
